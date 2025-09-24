@@ -1,0 +1,63 @@
+/* main.tcss */
+    Screen {
+        background: #140a22;
+        color: #e9d5ff;
+    }
+
+    #layout {
+        padding: 2 4;
+    }
+
+    Static {
+        padding: 0 0 1 0;
+    }
+
+    /* Inputs: purple theme + visible text/caret */
+    Input {
+        background: #2a1845;
+        color: #f5f3ff;          /* typed text color */
+        border: solid #6d28d9;
+        padding: 1 1;
+        margin-bottom: 1;        /* space below each input */
+    }
+
+    Input:focus {
+        background: #3b2161;
+        color: #ffffff;          /* ensure visible when focused */
+        border: solid #a78bfa;
+    }
+
+    /* Internal parts for reliability across themes */
+    Input > .input--value {
+        color: #f5f3ff;
+    }
+
+    Input:focus > .input--value {
+        color: #ffffff;
+    }
+
+    Input > .input--cursor {
+        background: #f5f3ff;     /* caret color */
+    }
+
+    Input > .input--placeholder {
+        color: #b9a3ff;
+    }
+
+    /* Button */
+    Button {
+        background: #7c3aed;
+        color: #ffffff;
+        padding: 1 3;
+        margin-top: 1;           /* extra space above the button */
+    }
+
+    Button:hover {
+        background: #6d28d9;
+    }
+
+    /* Result text */
+    #result {
+        color: #c4b5fd;
+        padding-top: 1;
+    }
